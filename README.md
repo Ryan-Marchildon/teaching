@@ -10,4 +10,4 @@ Click to jump to the relevant directory.
 * Teaching an AI to Play Pong with Reinforcement Learning (dev workshop)
 * [Intro to Sound Classification](https://github.com/Ryan-Marchildon/teaching/tree/master/sound-classification) (dev workshop)
 * [A Tour of Machine Learning in Python](https://github.com/Ryan-Marchildon/teaching/tree/master/tour-of-ml-python) (Tutorial on EDA and ML with Scikit-Learn)
-* [Quantum Computing and Quantum Neural Networks] (https://github.com/Ryan-Marchildon/teaching/tree/master/quantum-ml) (company lunch-and-learn)
+* [Quantum Computing and Quantum Neural Networks](https://github.com/Ryan-Marchildon/teaching/tree/master/quantum-ml) (company lunch-and-learn)
