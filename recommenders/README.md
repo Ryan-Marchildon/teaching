@@ -6,11 +6,9 @@ Presenter: Ryan Marchildon
 
 This workshop teaches the basics of how recommendation systems work and how to get started with building your own.
 
-**IMPORTANT NOTE**
-To get a code-interactive version of this talk and execute the code cells, launch the notebook `recommendation-systems.ipynb`.
+**Important Note:** This workshop was presented as an interactive notebook `recommendation-systems.ipynb` found in this directory. The workshop contents have been copied below, but Github does not support rendering of LaTeX equation markup, hence some content will not display correctly. To render all equations, get a code-interactive version of this talk and execute the code cells, please launch the aforementioned jupyter notebook.
 
-***
-***
+
 ## A) Why Recommendation Systems are Useful
 
 Modern consumers are flooded with choices. Electronic retailers offer enormous collections of products and content meeting a variety of needs and tastes. Navigating this content can be both overwhelming and time-consuming, and there is no guarantee that the user will find the material best suited to their interests. This in turn negatively impacts the user experience. 
@@ -25,7 +23,7 @@ Most content- or product-delivering organizations should now consider adopting r
 
 > "In a few years from now, 89% of businesses will compete mostly on customer experience."  *- Gartner Research, 2017* 
 
-***
+
 ## B) Spotting Use Cases
 
 Consider how recommendation systems might apply in each of the following user stories:
@@ -49,12 +47,12 @@ Ultimately, a well-designed recommendation system helps the user achieve their g
 **Brainstorm**: Can you think of other uses? What about recommending prices when you upload an item to a used goods market? Or recommending which restaurants to eat at? ...
 
 
-***
+
 ## C) The Ingredients of a Recommendation System
 
 Recommendaton systems are powered by `data` collected about your users, your content, and user interactions with your content. This data is used to tune a predictive model which generates recommendations based on content similarity or the recorded history of user actions. 
 
-<img src="images/recommender-diagram.png" alt="Drawing" style="width: 1000px;"/>
+<img src="images/recommender-diagram.png" alt="Drawing" width="100%"/>
 
 
 
@@ -113,14 +111,14 @@ User-supplied information:
 * ...
 
 
-***
-### D) Recommendations by Collaborative Filtering
+
+## D) Recommendations by Collaborative Filtering
 
 In collaborative filtering, we leverage trends in user ratings to try to predict which items will be most relevant. *Note: instead of 'ratings', we could just as easily use other forms of explicit user feedback, such as video views, etc.* 
 
 As a pre-requisite, we need to prepare a user ratings matrix, where the rows correspond to users ($u$), the columns correspond to items ($i$), and the matrix elements correspond to user rankings of each item ($r_{ui}$).
 
-<img src="images/ratings-matrix.png" alt="Drawing" style="width: 400px;"/>
+<img src="images/ratings-matrix.png" alt="Drawing" width="60%"/>
 
 *(Above) The ratings of users (b) and (c) are in agreement with user (e) on all items for which user (e) has provided a rating. Can we therefore use the ratings from users (b) and (c) to predict user (e)'s rating of the laptop?*
 
@@ -131,13 +129,13 @@ There are two types of collaborative filtering, which attack the same problem fr
 > *"Users like me also looked at these other items..."*
 
 
-<img src="images/user-based-cf.png" alt="Drawing" style="width: 400px;"/>
+<img src="images/user-based-cf.png" alt="Drawing" width="60%"/>
 
 
 * **Item-Based**: We look at which users rated a given item highly, and see how those users rated other items to select our recommendations. 
 > *"Users who looked at this item also looked at these other items..."*
 
-<img src="images/item-based-cf.png" alt="Drawing" style="width: 400px;"/>
+<img src="images/item-based-cf.png" alt="Drawing" width="60%"/>
 
 *(Above): The bottom user has viewed the watermellon. Both of the other two users who viewed the watermellon also viewed the grapes, so recommend the grapes.*
 
@@ -470,7 +468,7 @@ As the documentation points out, while this simple method can get the job done i
 We'll address some of these issues shortly. 
 
 
-*** 
+
 ### Collaborative Filtering via Latent Factors
 
 Collaborative filtering methods that compute distance relationships (e.g. similarities) between users or items are thought of as "neighbourhood" methods since they center on the idea of "nearness". But an obvious issue with this approach is that it doesn't deal well with `sparse data` and doesn't model underlying 'taste' or 'preference' vectors directly.
@@ -523,7 +521,7 @@ For further details, see [this article](https://datajobs.com/data-science-repo/R
 
 * `User and Item Metadata`. More advanced techniques can incorporate implicit user feedback (e.g. browsing history) and well as explicit metadata (e.g. genre tags, keywords, user-specified preferences) into the training algorithm. 
 
-***
+
 ## E) Content-Based Recommendations: Mitigating the Cold Start Issue
 
 When you lack data initially, recommendations can be made through hardcoded business logic, or by recommending items based on similarity of metadata. For example, we could encode a movie's features such as genre, keywords, production studio, budget, lead actors/actresses, average rating, and popularity into a vector, and then find similar movies by computing the **cosine similarity**.
@@ -544,7 +542,7 @@ We could also leverage other machine learning technologies, such as image recogn
 Check out this article:
 * [How Does Spotify Know You So Well?](https://medium.com/s/story/spotifys-discover-weekly-how-machine-learning-finds-your-new-music-19a41ab76efe) A software engineer explains the science behind personalized music recommendations, including how spotify leverages ML to find similarities among lyrics and the audio itself. (9 min read)
 
-***
+
 ## F) Good Design Habits
 
 Never lose sight of the user experience. 
@@ -558,7 +556,6 @@ Never lose sight of the user experience.
 * `Be Sensitive to Ethics`. Recommendations can bring great value to clients and their users when deployed responsibly. However, we all occasionally hear stories about recommendation systems gone wrong. Facebook recently came under intense criticism about its news feed recommendations, which create an echo chamber that amplifies the polarization of extreme political views. This could have been addressed by including more diversity of viewpoints in the articles being recommended. Another well-known story is when Target predicted that a teenage girl was pregnant based on her shopping habits and sent a tailored brochure of recommended baby products to her family address. We should consider not only privacy around data, but also privacy around the recommendations themselves. The onus is on us to anticipate possible implications of our recommendation systems and include responses to these in our design thinking process. 
 
 
-***
 ## H) Other References
 
 ### Datasets
