@@ -9,3 +9,4 @@ Click to jump to the relevant directory.
 * Building VGG and ResNet with the Keras Functional API
 * Teaching an AI to Play Pong with Reinforcement Learning (dev workshop)
 * Intro to Sound Classification (dev workshop)
+* [A Tour of Machine Learning in Python](https://github.com/Ryan-Marchildon/teaching/tree/master/tour-of-ml-python) (Tutorial on EDA and ML with Scikit-Learn)
