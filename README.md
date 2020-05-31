@@ -1,6 +1,6 @@
 # Teaching
 
-This repo contains lectures and materials from various talks and tutorials I have delivered. 
+This repo contains lectures and materials from various talks and tutorials I have created and delivered. 
 
 ### Summary of Contents:
 Click to jump to the relevant directory. 
