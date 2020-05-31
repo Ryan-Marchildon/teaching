@@ -8,6 +8,8 @@ Also covered are kernel transforms for:
 * Dilated Convolutions
 * Custom Sampling Grids
 
+Preview the notebook [here](https://github.com/Ryan-Marchildon/teaching/blob/master/conv2d-from-scratch/conv2D_from_scratch.ipynb).
+
 ### Usage
 * Requires `python 3`, `numpy`, and `jupyter`.
 * Launch `conv2D_from_scratch.ipynb`.
