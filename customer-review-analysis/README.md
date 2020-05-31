@@ -1,7 +1,9 @@
 # Building a Pipeline for Aspect-Entity Extraction
 *Getting started with NLP using sequence-to-sequence IOB2 tagging, pre-trained embedding vectors, stacked CNN/LSTM networks, and more.*
 
-<img src="images/thumbnail.jpg" alt="Thumbnail" width="50%" display="block" margin="auto"/>
+<p align="center">
+  <img src="images/thumbnail.jpg" alt="Thumbnail" width="50%"/>
+</p>
 
 Natural Language Processing (NLP) involves the task of inferring useful information from text. Most elementary demonstrations of NLP involve sentiment analysis, i.e. categorizing an opinion as positive or negative. In this demonstration I tackle a more sophisticated task, namely [aspect-entity](https://link.springer.com/chapter/10.1007/978-3-642-40837-3_1) extraction.
 
