@@ -1,6 +1,6 @@
 # Teaching
 
-This repo contains materials I have created for various talks and tutorials. 
+This repo contains materials I have created for various talks and tutorials on AI/ML and related topics. 
 
 ### Summary of Contents:
 Click to jump to the relevant directory. 
